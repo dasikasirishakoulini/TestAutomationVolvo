@@ -1,0 +1,88 @@
+{
+  "start": "2022-06-05T16:29:47.866Z",
+  "end": "2022-06-05T16:31:04.840Z",
+  "capabilities": {
+    "acceptInsecureCerts": true,
+    "browserName": "chrome",
+    "browserVersion": "102.0.5005.63",
+    "chrome": {
+      "chromedriverVersion": "101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904})",
+      "userDataDir": "C:\\Users\\Guru\\AppData\\Local\\Temp\\scoped_dir20040_1582951554"
+    },
+    "goog:chromeOptions": {
+      "debuggerAddress": "localhost:65246"
+    },
+    "networkConnectionEnabled": false,
+    "pageLoadStrategy": "normal",
+    "platformName": "windows",
+    "proxy": {},
+    "setWindowRect": true,
+    "strictFileInteractability": false,
+    "timeouts": {
+      "implicit": 0,
+      "pageLoad": 300000,
+      "script": 30000
+    },
+    "unhandledPromptBehavior": "dismiss and notify",
+    "webauthn:extension:credBlob": true,
+    "webauthn:extension:largeBlob": true,
+    "webauthn:virtualAuthenticators": true,
+    "sessionId": "56994106ad50e8e60b3020832e0b5c26"
+  },
+  "host": "localhost",
+  "port": 9515,
+  "baseUrl": "https://www.volvocars.com/",
+  "framework": "mocha",
+  "duration": 76974,
+  "suites": [
+    {
+      "title": "Header test",
+      "duration": 61087,
+      "start": "2022-06-05T16:29:47.879Z",
+      "end": "2022-06-05T16:30:48.966Z",
+      "tests": [
+        {
+          "title": "Open page and accept cookies",
+          "start": "2022-06-05T16:29:47.879Z",
+          "end": "2022-06-05T16:29:52.526Z",
+          "duration": 4647,
+          "state": "passed",
+          "screenshots": []
+        },
+        {
+          "title": "Logo home link is displayed and working",
+          "start": "2022-06-05T16:29:52.529Z",
+          "end": "2022-06-05T16:30:44.025Z",
+          "duration": 51496,
+          "state": "passed",
+          "screenshots": []
+        },
+        {
+          "title": "Our cars link is displayed and opens car menu",
+          "start": "2022-06-05T16:30:44.025Z",
+          "end": "2022-06-05T16:30:46.562Z",
+          "duration": 2537,
+          "state": "passed",
+          "screenshots": []
+        },
+        {
+          "title": "Menu link is displayed and opens side menu",
+          "start": "2022-06-05T16:30:46.571Z",
+          "end": "2022-06-05T16:30:48.961Z",
+          "duration": 2390,
+          "state": "passed",
+          "screenshots": []
+        }
+      ],
+      "hooks": []
+    }
+  ],
+  "specs": [
+    "C:\\Users\\Guru\\Desktop\\sirishawebdriverIoFinal\\TestAutomationVolvo\\test\\specs\\header-test.js"
+  ],
+  "state": {
+    "passed": 4,
+    "failed": 0,
+    "skipped": 0
+  }
+}

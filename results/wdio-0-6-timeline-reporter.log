@@ -1,0 +1,77 @@
+{
+  "start": "2022-06-05T16:29:40.027Z",
+  "end": "2022-06-05T16:30:08.813Z",
+  "capabilities": {
+    "acceptInsecureCerts": true,
+    "browserName": "chrome",
+    "browserVersion": "102.0.5005.63",
+    "chrome": {
+      "chromedriverVersion": "101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904})",
+      "userDataDir": "C:\\Users\\Guru\\AppData\\Local\\Temp\\scoped_dir20040_2016324842"
+    },
+    "goog:chromeOptions": {
+      "debuggerAddress": "localhost:65182"
+    },
+    "networkConnectionEnabled": false,
+    "pageLoadStrategy": "normal",
+    "platformName": "windows",
+    "proxy": {},
+    "setWindowRect": true,
+    "strictFileInteractability": false,
+    "timeouts": {
+      "implicit": 0,
+      "pageLoad": 300000,
+      "script": 30000
+    },
+    "unhandledPromptBehavior": "dismiss and notify",
+    "webauthn:extension:credBlob": true,
+    "webauthn:extension:largeBlob": true,
+    "webauthn:virtualAuthenticators": true,
+    "sessionId": "e755c52054c78b26643ab217c24dbdc5"
+  },
+  "host": "localhost",
+  "port": 9515,
+  "baseUrl": "https://www.volvocars.com/",
+  "framework": "mocha",
+  "duration": 28786,
+  "suites": [
+    {
+      "title": "Footer test",
+      "duration": 15107,
+      "start": "2022-06-05T16:29:40.036Z",
+      "end": "2022-06-05T16:29:55.143Z",
+      "tests": [
+        {
+          "title": "Open page and accept cookies",
+          "start": "2022-06-05T16:29:40.036Z",
+          "end": "2022-06-05T16:29:44.983Z",
+          "duration": 4947,
+          "state": "passed",
+          "screenshots": []
+        },
+        {
+          "title": "Footer container exists and has correct links",
+          "start": "2022-06-05T16:29:44.985Z",
+          "end": "2022-06-05T16:29:55.142Z",
+          "duration": 10157,
+          "state": "failed",
+          "screenshots": [],
+          "error": {
+            "type": "Error",
+            "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.volvocars.com/intl/\u001b[7mv/\u001b[27mlegal/privacy\"\u001b[39m\nReceived: \u001b[31m\"https://www.volvocars.com/intl/legal/privacy\u001b[7m/privacy-customer-privacy-policy\u001b[27m\"\u001b[39m",
+            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"https://www.volvocars.com/intl/\u001b[7mv/\u001b[27mlegal/privacy\"\u001b[39m\nReceived: \u001b[31m\"https://www.volvocars.com/intl/legal/privacy\u001b[7m/privacy-customer-privacy-policy\u001b[27m\"\u001b[39m\n    at Context.<anonymous> (C:\\Users\\Guru\\Desktop\\sirishawebdriverIoFinal\\TestAutomationVolvo\\test\\specs\\footer-test.js:34:29)"
+          }
+        }
+      ],
+      "hooks": []
+    }
+  ],
+  "specs": [
+    "C:\\Users\\Guru\\Desktop\\sirishawebdriverIoFinal\\TestAutomationVolvo\\test\\specs\\footer-test.js"
+  ],
+  "state": {
+    "passed": 1,
+    "failed": 1,
+    "skipped": 0
+  }
+}

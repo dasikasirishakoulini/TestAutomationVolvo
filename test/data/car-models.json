@@ -1,0 +1,50 @@
+[
+    {
+        "category": "SUV",
+        "model": "XC90 Recharge",
+        "type": "plug-in hybrid",
+        "url": "/xc90-hybrid"
+    },
+    {
+        "category": "SUV",
+        "model": "XC60 Recharge",
+        "type": "plug-in hybrid",
+        "url": "/xc60-hybrid"
+    },
+    {
+        "category": "SUV",
+        "model": "XC40 Recharge",
+        "type": "plug-in hybrid",
+        "url": "/xc40-hybrid"
+    },
+    {
+        "category": "SUV",
+        "model": "XC40 Recharge",
+        "type": "pure electric",
+        "url": "/xc40-electric"
+    },
+    {
+        "category": "ESTATE",
+        "model": "V90 Recharge",
+        "type": "plug-in hybrid",
+        "url": "/v90-hybrid"
+    },
+    {
+        "category": "ESTATE",
+        "model": "V60 Recharge",
+        "type": "plug-in hybrid",
+        "url": "/v60-hybrid"
+    },
+    {
+        "category": "SEDAN",
+        "model": "S90 Recharge",
+        "type": "plug-in hybrid",
+        "url": "/s90-hybrid"
+    },
+    {
+        "category": "SEDAN",
+        "model": "S60 Recharge",
+        "type": "plug-in hybrid",
+        "url": "/s60-hybrid"
+    }
+]

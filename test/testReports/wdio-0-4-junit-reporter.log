@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Footer test" timestamp="2022-06-05T22:17:58" time="19.142" tests="2" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Footer test"/>
+      <property name="capabilities" value="chrome.102_0_5005_63.windows"/>
+      <property name="file" value=".\test\specs\footer-test.js"/>
+    </properties>
+    <testcase classname="chrome.102_0_5005_63.windows.Footer_test" name="Open page and accept cookies" time="9.098">
+      <system-out><![CDATA[
+COMMAND: POST /session/0fb85ba3f2b46700361d6d837e4712be/url - {"url":"https://www.volvocars.com/intl/v/car-safety/a-million-more"}
+RESULT: {"url":"https://www.volvocars.com/intl/v/car-safety/a-million-more"}
+COMMAND: POST /session/0fb85ba3f2b46700361d6d837e4712be/element - {"using":"css selector","value":"#onetrust-accept-btn-handler"}
+RESULT: {"using":"css selector","value":"#onetrust-accept-btn-handler"}
+COMMAND: POST /session/0fb85ba3f2b46700361d6d837e4712be/element/2eb46958-0c71-4bd1-8f9c-cf839f0c6e40/click - {}
+RESULT: {}
+COMMAND: GET /session/0fb85ba3f2b46700361d6d837e4712be/url - {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.102_0_5005_63.windows.Footer_test" name="Footer container exists and has correct links" time="10.034">
+      <failure message="Error: Timeout - Async function did not complete within 10000ms (set by jasmine.DEFAULT_TIMEOUT_INTERVAL)"><![CDATA[Error: Timeout - Async function did not complete within 10000ms (set by jasmine.DEFAULT_TIMEOUT_INTERVAL)
+    at <Jasmine>
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)]]></failure>
+      <error message="Error: Timeout - Async function did not complete within 10000ms (set by jasmine.DEFAULT_TIMEOUT_INTERVAL)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/0fb85ba3f2b46700361d6d837e4712be/element - {"using":"css selector","value":"[data-autoid='footer:container']"}
+COMMAND: DELETE /session/0fb85ba3f2b46700361d6d837e4712be - {}
+RESULT: {}
+RESULT: {"using":"css selector","value":"[data-autoid='footer:container']"}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Timeout - Async function did not complete within 10000ms (set by jasmine.DEFAULT_TIMEOUT_INTERVAL)
+    at <Jasmine>
+    at listOnTimeout (internal/timers.js:557:17)
+    at processTimers (internal/timers.js:500:7)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,96 @@
+{
+  "start": "2022-06-05T16:29:25.774Z",
+  "end": "2022-06-05T16:31:13.900Z",
+  "capabilities": {
+    "acceptInsecureCerts": true,
+    "browserName": "chrome",
+    "browserVersion": "102.0.5005.63",
+    "chrome": {
+      "chromedriverVersion": "101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904})",
+      "userDataDir": "C:\\Users\\Guru\\AppData\\Local\\Temp\\scoped_dir20040_1020047730"
+    },
+    "goog:chromeOptions": {
+      "debuggerAddress": "localhost:65051"
+    },
+    "networkConnectionEnabled": false,
+    "pageLoadStrategy": "normal",
+    "platformName": "windows",
+    "proxy": {},
+    "setWindowRect": true,
+    "strictFileInteractability": false,
+    "timeouts": {
+      "implicit": 0,
+      "pageLoad": 300000,
+      "script": 30000
+    },
+    "unhandledPromptBehavior": "dismiss and notify",
+    "webauthn:extension:credBlob": true,
+    "webauthn:extension:largeBlob": true,
+    "webauthn:virtualAuthenticators": true,
+    "sessionId": "fd6696cf94c35f7956f83b73e81d039b"
+  },
+  "host": "localhost",
+  "port": 9515,
+  "baseUrl": "https://www.volvocars.com/",
+  "framework": "mocha",
+  "duration": 108126,
+  "suites": [
+    {
+      "title": "volvo url search Test",
+      "duration": 100492,
+      "start": "2022-06-05T16:29:25.781Z",
+      "end": "2022-06-05T16:31:06.273Z",
+      "tests": [
+        {
+          "title": "should verify url",
+          "start": "2022-06-05T16:29:25.782Z",
+          "end": "2022-06-05T16:29:48.449Z",
+          "duration": 22667,
+          "state": "passed",
+          "screenshots": []
+        },
+        {
+          "title": "should click on learn safety",
+          "start": "2022-06-05T16:29:48.449Z",
+          "end": "2022-06-05T16:29:50.938Z",
+          "duration": 2489,
+          "state": "passed",
+          "screenshots": []
+        },
+        {
+          "title": "should click on learn more",
+          "start": "2022-06-05T16:29:50.938Z",
+          "end": "2022-06-05T16:30:11.067Z",
+          "duration": 20129,
+          "state": "passed",
+          "screenshots": []
+        },
+        {
+          "title": "should click on recharge",
+          "start": "2022-06-05T16:30:11.067Z",
+          "end": "2022-06-05T16:30:27.895Z",
+          "duration": 16828,
+          "state": "passed",
+          "screenshots": []
+        },
+        {
+          "title": "should click on learn more",
+          "start": "2022-06-05T16:30:27.895Z",
+          "end": "2022-06-05T16:31:06.273Z",
+          "duration": 38378,
+          "state": "passed",
+          "screenshots": []
+        }
+      ],
+      "hooks": []
+    }
+  ],
+  "specs": [
+    "C:\\Users\\Guru\\Desktop\\sirishawebdriverIoFinal\\TestAutomationVolvo\\test\\specs\\examplevolvo.js"
+  ],
+  "state": {
+    "passed": 5,
+    "failed": 0,
+    "skipped": 0
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "start": "2022-06-05T16:41:39.391Z",
+  "end": "2022-06-05T16:41:41.507Z",
+  "capabilities": {
+    "acceptInsecureCerts": true,
+    "browserName": "chrome",
+    "browserVersion": "102.0.5005.63",
+    "chrome": {
+      "chromedriverVersion": "101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904})",
+      "userDataDir": "C:\\Users\\Guru\\AppData\\Local\\Temp\\scoped_dir21532_1699175117"
+    },
+    "goog:chromeOptions": {
+      "debuggerAddress": "localhost:49250"
+    },
+    "networkConnectionEnabled": false,
+    "pageLoadStrategy": "normal",
+    "platformName": "windows",
+    "proxy": {},
+    "setWindowRect": true,
+    "strictFileInteractability": false,
+    "timeouts": {
+      "implicit": 0,
+      "pageLoad": 300000,
+      "script": 30000
+    },
+    "unhandledPromptBehavior": "dismiss and notify",
+    "webauthn:extension:credBlob": true,
+    "webauthn:extension:largeBlob": true,
+    "webauthn:virtualAuthenticators": true,
+    "sessionId": "5e125834ffade2458752094d41980878"
+  },
+  "host": "localhost",
+  "port": 9515,
+  "baseUrl": "https://www.volvocars.com/",
+  "framework": "mocha",
+  "duration": 2116,
+  "suites": [
+    {
+      "title": "Volvo cars safety page",
+      "duration": 156,
+      "start": "2022-06-05T16:41:39.403Z",
+      "end": "2022-06-05T16:41:39.559Z",
+      "tests": [
+        {
+          "title": "check video is playing and validate pause/play",
+          "start": "2022-06-05T16:41:39.403Z",
+          "end": "2022-06-05T16:41:39.524Z",
+          "duration": 121,
+          "state": "passed",
+          "screenshots": []
+        }
+      ],
+      "hooks": [
+        {
+          "start": "2022-06-05T16:41:39.404Z",
+          "end": "2022-06-05T16:41:39.440Z",
+          "duration": 36,
+          "title": "\"before each\" hook for Volvo cars safety page",
+          "associatedSuite": "Volvo cars safety page"
+        }
+      ]
+    }
+  ],
+  "specs": [
+    "C:\\Users\\Guru\\Desktop\\sirishawebdriverIoFinal\\TestAutomationVolvo\\test\\specs\\carSafetyPageVideos.js"
+  ],
+  "state": {
+    "passed": 1,
+    "failed": 0,
+    "skipped": 0
+  }
+}
