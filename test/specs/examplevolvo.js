@@ -1,8 +1,8 @@
+const { URL } = require('../utils/commons')
+
 describe('volvo url search Test', async () => {
     it('should verify url', async () => {
-        browser.url('https://www.volvocars.com/intl/v/car-safety/a-million-more')
-        await expect(browser).toHaveUrlContaining('volvocars')
-        // find the element onetrust-accept-btn-handler and click on the accept
+        await browser.url(URL);
         const consent = await $("#onetrust-accept-btn-handler")
         await consent.click()
         const link = await $('a')

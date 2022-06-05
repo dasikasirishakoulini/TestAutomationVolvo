@@ -1,22 +1,45 @@
 {
-  "name": "webdriverioexamplecode",
+  "name": "volvo_campaign_test",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A test suite for Volvo safety campaign",
+  "main": "wdio.conf.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "wdio wdio.conf.js",
+    "docker-compose": "docker-compose -f docker-compose.yaml up --scale selenium=1",
+    "dev": "npm run wdio -- conf/wdio.dev.conf.js --suite",
+    "wdio": "wdio",
+    "dockerBrowserRun": "npx wdio run conf/containerizedBrowsers.js",
+    "parallelTestRunOnChrome": "npx wdio run conf/multiTestParallelRunOnChrome.js",
+    "parallelTestRunOnMultiBrowser": "npx wdio run conf/multiTestParallelRunOnMultiBrowser.js",
+    "runWithAllure": "npx wdio run conf/runWithAllureReport.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@wdio/cli": "^7.19.7"
-  },
   "devDependencies": {
-    "@wdio/local-runner": "^7.19.7",
+    "@wdio/cli": "^7.19.7",
+    "@wdio/local-runner": "^7.20.1",
     "@wdio/mocha-framework": "^7.19.7",
-    "@wdio/spec-reporter": "^7.19.7",
+    "@wdio/spec-reporter": "^7.20.0",
     "chromedriver": "^101.0.0",
-    "wdio-chromedriver-service": "^7.3.2"
+    "wdio-chromedriver-service": "^7.3.2",
+    "wdio-image-comparison-service": "^2.3.0"
+  },
+  "dependencies": {
+    "@wdio/allure-reporter": "^7.20.0",
+    "@wdio/crossbrowsertesting-service": "^7.20.1",
+    "@wdio/firefox-profile-service": "^7.20.0",
+    "@wdio/jasmine-framework": "^7.20.0",
+    "@wdio/junit-reporter": "^7.20.0",
+    "@wdio/selenium-standalone-service": "^7.20.1",
+    "@wdio/sync": "^7.20.1",
+    "node": "^14.17.3",
+    "wdio-docker-service": "^3.2.0",
+    "wdio-image-comparison-service": "^3.1.1",
+    "wdio-lambdatest-service": "^1.0.8",
+    "wdio-timeline-reporter": "^5.1.4"
   }
 }

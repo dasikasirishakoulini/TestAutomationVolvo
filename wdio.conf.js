@@ -1,3 +1,5 @@
+const {TimelineService} = require('wdio-timeline-reporter/timeline-service');
+
 exports.config = {
     //
     // ====================
@@ -20,6 +22,9 @@ exports.config = {
     // then the current working directory is where your `package.json` resides, so `wdio`
     // will be called from there.
     //
+    host: 'selenium',
+    port: 4444,
+    path: '/wd/hub',
     specs: [
         './test/specs/**/*.js'
     ],
@@ -58,6 +63,15 @@ exports.config = {
         //
         browserName: 'chrome',
         acceptInsecureCerts: true
+        //'goog:chromeOptions': {
+        //    args: [
+        //        '--no-sandbox',
+        //        '--disable-infobars',
+        //        '--headless',
+        //        '--disable-gpu',
+        //        '--window-size=1440,735'
+        //    ],
+        //}
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
@@ -94,7 +108,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'http://localhost',
+    baseUrl: 'https://www.volvocars.com/',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -110,7 +124,7 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['chromedriver'],
+    services: [['chromedriver'], ['docker'], [TimelineService]],
     
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
@@ -132,8 +146,8 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],
-
+    //reporters: ['spec'],
+    reporters: [['timeline', {outputDir: './results'}]],
 
     
     //
@@ -142,6 +156,21 @@ exports.config = {
     mochaOpts: {
         ui: 'bdd',
         timeout: 60000
+    },
+
+    autoCompileOpts: {
+        //
+        // To disable auto-loading entirely set this to false.
+        autoCompile: true, // <boolean> Disable this to turn off autoloading. Note: When disabling, you will need to handle calling any such libraries yourself.
+        //
+    },    
+    dockerOptions: {
+        image: 'selenium/standalone-chrome',
+        healthCheck: 'http://localhost:4444',
+        options: {
+            p: ['4444:4444'],
+            shmSize: '2g'
+        }
     },
     //
     // =====
